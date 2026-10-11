@@ -14,7 +14,7 @@ MoonlightGPU consumes **Accel-Sim style** traces, produced by Accel-Sim's NVBit 
 | `kernelslist.g` | One entry per line: a `kernel-N.traceg` path, or a `MemcpyHtoD,<addr>,<bytes>` command (ignore the memcpy lines for a timing-only simulator). |
 | `kernel-N.traceg` | Header with kernel metadata, then per-thread-block, per-warp instruction records. |
 
-## Header (key = value lines starting with `-`)
+## Header (key = value lines starting with `-`) 
 
 Expected keys: `-kernel name`, `-kernel id`, `-grid dim`, `-block dim`, `-shmem`,
 `-nregs`, plus some tracer/GPU info lines you can ignore. Map them to `KernelTrace`.
